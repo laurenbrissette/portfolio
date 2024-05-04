@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>Lauren's CS Portfolio!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@96.9,300..700&display=swap"
+    rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="heading" class="heading";>
+        <a id="heading-home" class="heading-piece" href="index.html">LB</a>
+        <a class="heading-piece" href="projects.html">Projects</a>
+        <a class="heading-piece" href="education.html">Education</a> 
+        <a class="heading-piece" href="archive.html">Archive</a>
+    </div>
+    <div id="name-container" class="contain">
+        <img id="name-right" class="name-piece" src="img/center-image.png">
+        <div  id="name-left" class="name-piece">
+                <h1><strong>Lauren Brissette </strong> </h1>
+                <br>
+                <h3>Northeastern University | Computer Science</h3>
+                <p>I love to learn new things, try new foods, and creatively solve problems. 
+                    Above all, I believe in the coexistence of hard work and happiness.  
+                    
+                </p>
+        </div>
+    </div>
+    <h2 class="quote"> "Your reward will be the widening of the horizon as you climb. <br> - Cecila Payne Gaposchkin </h2>
+    <div id="feature-container" class="contain">
+        <div id="first-feature" class="feature-piece">
+            <h4>From Education</h4>
+            <p>Organized a Scratch hackathon with FirstByte software team Spring 2024!
+                complete with presentations, activities, and challenges.
+            </p>
+       </div>
+        <div id="second-feature" class="feature-piece">
+            <h4>From Projects</h4>
+
+            <p>"Seam Ripper" project for Fundamentals of CS II Accel.. Smart image resizer.  
+                Additional details below.
+            </p>
+        </div>
+        <div id="third-feature" class="feature-piece">
+            <h4>From Archive</h4>
+            <p>Most recent book I read! </p>
+         </div>
+         <div id="feature-heading"><h4>Featured</h4></div>
+    </div>
+    <div class="projects">
+        <h2 class="projects">Projects</h2>
+    </div>
+    <div class="project-line">
+        <div class="card">
+            <video class="card-img-top" width="50" height="50" autoplay>
+                <source src="seamripper.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            <div class="card-body">
+              <h5 class="card-title">Seam Ripper</h5>
+              <p class="card-text">Smart image resizer, which detects the "least interesting" seam of pixels in the image and removes it, randomly alternating between 
+                horizontal and vertical.  "Interestingness" computed based on brightness of three upper neighbors of a given pixel.  Demonstrates efficiency and dynamic 
+            programming for quick computation time.  Written in Java using Northeastern "impword" and "tester" libraries.  Accelerated Fundamentals of CS II 2024.</p>
+              <a href="#" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Maze Generator</h5>
+              <p class="card-text">Maze generator, which constructs mazes up to 100 x 60 cells using Kruskal's Algorithm for Minimum Spanning Trees.
+                Solution may be animated in either Breadth or Depth First Search, or done manually.  Includes options to regenerate and pause.  Written in Java using 
+                Northeastern "impword" and "tester" libraries.  Accelerated Fundamentals of CS II 2024.
+              </p>
+              <a href="#" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Exquisite Corpse Online</h5>
+              <p class="card-text">Web application bringing a drawing game from team's childhoods.  Three people blindly draw parts of a creature on a 
+                time limit (customizable), and the pieces are combined to form a full image.  First experience with web development for all contributors.
+                Written in HTML, CSS, and Javascript in collaboration with a team.  HackBeanpot Hackathon March 2024.
+              </p>
+              <a href="#" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">This Website</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">View on GitHub</a>
+            </div>
+          </div>
+    </div>
+   <div class="skills">
+    <img class="skills-segment" id="skills-left" src="img/skills.png">
+    
+    <p class="skills-segment" id="skills-text">Languages: something here 
+        <br><br>Developer Tools: something here<br><br>Anything else </p>
+        <img class="skills-segment" id="skills-right" src="img/skills-right.png">
+   </div>
+z
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
