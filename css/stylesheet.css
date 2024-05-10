@@ -1,13 +1,19 @@
 /*--------------DEFAULTS-----------------*/
 body {
   background-color: #EFEFE9;
-  
+  font-family: "Karla", serif;
+
 }
 
 h1 {
   margin-left: 40px;
   font-size: 56px;
   padding-bottom: 0px;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: bolder;
 }
 
 h3 {
@@ -36,12 +42,40 @@ h4 {
   padding: 0;
 }
 
-link {
+a:link {
   text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.btn {
+  margin-top: 15px;
+  background-color: #523D35;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #e0d4c8;
+}
+
+.center {
+  display:flex;
+  justify-content: center;
+}
+
+.middle {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 /*--------------HEADING GRID-----------------*/
 .heading {
   overflow: hidden;
+  top: 0;
   padding-top: 5px;
   width: 100%;
   height: 9vh;
@@ -53,14 +87,17 @@ link {
   align-items: center;
   background-color: #523D35;
   font-weight: bolder;  
+  z-index: 999;
 }
 
 .heading-piece {
   display: flex;
+  margin:0;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  width: 100px;
+  padding-left:20px;
+  padding-right:20px;
   height: 60px;
   font-size: 16px;
   float: right;
@@ -90,28 +127,28 @@ link {
 /*--------------NAME GRID-----------------*/
 #name-container {
   width: 100%;
+  height: 85vh;
   margin-top: 0px; 
-  font-style: inter;
 }
 .name-piece {
   text-decoration: none; 
   
 }
-#name-left {
-  margin-top: 18%;
-  width: 42%;
-  letter-spacing: 2px;
-  
+#name-right {
+  margin-top: 14%;
+  width: 60%;
 }
-#name-left p{
+#name-right p{
   inline-size: 86%;
   text-align: justify;
   padding-left: 7%;
   padding-right: 7%;
+  color: black;
 }
-#name-right {
-  width: 58%; height: 80%; object-fit: cover;
+#name-left {
+  width: 55%; height: 100%; object-fit: cover;
 }
+
 /*--------------FEATURES-----------------*/
 .features {
   width:100%;
@@ -121,37 +158,30 @@ link {
   padding-top: 5vh; padding-bottom: 3vh;
   align-content: center;
 }
-#feature-title {
-  padding-left: 20px; padding-top: 0; padding-bottom: 0;
-  font-size: 30px;
-}
 
 #feature-container {
-  background-color: #523D35;
+  margin-top: 50px;
+  background-color: #e1e1d9;
   display: flex;
   height: 60vh;
   align-items: center;
   width: 100%;
   position: relative;
-  box-shadow: 0 0 2px #b7b7b7cc;
 }
 
 .feature-piece {
-  display: flex;
-  background: #BBA58F;
+  background-color: white;
   width: 25%;
   height: 90%;
   padding: 20px;
   margin: 10px;
-  float: left;
-  display: flex;
-  justify-content: center;
   text-wrap: wrap;
-  box-shadow: 0 0 2px #b7b7b7cc;
 }
-.feature-piece h1{
-  text-decoration: none; 
+
+.feature-piece h4{
+  padding-bottom: 10px;
 }
+
 .feature-piece p {
   text-decoration: none;
   position: absolute;
@@ -161,31 +191,28 @@ link {
   inline-size: 25%; /*based on the size of the feature containers*/
 }
 
-#first-feature {
-  margin-left: 30px;
-}
-
 #feature-heading {
-  color: white;
+  color: black;
   float: left;
   padding-left: 30px;
   width: 10vh;
-  font-size: 45px;
 }
 
-#feature-heading h4{
-  font-size: 40px;
+#feature-heading h2{
   height: 1px;
+  font-size: 45px;
   display: fixed;
 }
 
 .feature-img {
+  display: inline-block;
   padding: none;
-  margin-top: 80px;
-  width: 200px;
-  height: 200px;
+  inline-size: 75%;
   display: fixed;
+  outline-style: solid;
+  outline-color: #e1e1d9;
 }
+
 /*---------------QUOTE-----------------------*/
 .quote {
   /* keep padding top and bottom the same ! */
@@ -195,16 +222,17 @@ link {
   font-size: 45px;
 }
 /*--------------PROJECTS-----------------*/
-.projects {
+.title {
   display: flex;
   font-size: 45px;
+  font-weight: bolder;
   width: 100%;
   padding-top: 4vh;
-  padding-bottom: 2vh;
+  padding-bottom: 1vh;
   align-items: center;
   justify-content: center;
 }
-.project-line {
+.card-line {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +240,7 @@ link {
 }
 
 .card, .card-img-top {
-  width: 50vh;
+  width: 300px;
 }
 
 .card {
@@ -220,45 +248,96 @@ link {
 }
 
 .card-img-top {
-  height: 35vh;
+  height: 300px;
+  background-color:#e1e1d9;
+}
+
+.collapsible {
+  background-color: #e1e1d9;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.active, .collapsible:hover {
+  background-color: #e0d4c8;
+}
+
+.card-text {
+  padding: 15px;
+  display: none;
+  overflow: hidden;
 }
 
 /*--------ARCHIVE STUFF-------------*/
-#archive-carosel {
-  position: relative;
-  margin-top: 10vh;
-  gap: 100px;
+#archive-blurb {
+  background-color: #e1e1d9;
+  height: 10vh;
   display: flex;
-  height: 70vh;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: white;
-  box-shadow: 0 0 2px #b7b7b7cc;
-  overflow: hidden;
-  scrollbar-width: none;
+  padding-left: 10vw;
 }
 
-#archive-item {
-  overflow: scroll;
-  scroll-behavior: smooth;
+/*--------SKILLS-------------*/
 
-}
-
-/* SKILLS */
-
-.skills {
-  width: 100vw;
+#skills {
+  background-color: #e1e1d9;
   display: flex;
-  height: 20vh;
+  height: 15vh;
+  align-items: center;
+  width: 100%;
+  
+}
+
+#skills-title {
+  margin-left: 10vw;
+  margin-right: 20vw;
+  font-size: 25px;
+  color: black;
+}
+
+
+/*--------EDUCATION-------------*/
+
+#education {
+  background-color: #e1e1d9;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  align-items: center;
+}
+
+#edu-title {
+ margin-right: 6vw;
+}
+
+
+.education-text {
+  display: inline;
+  width: 35vw;
+  margin-left: 4vh;
+
+}
+
+
+#footer {
+  background-color: #523D35;
+  height:30px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
   overflow: hidden;
 }
 
-#skills-left {
-  float: left;
-}
 
-#skills-right {
-  float: right;
-}
 

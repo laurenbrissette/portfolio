@@ -12,110 +12,210 @@
     crossorigin="anonymous">
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@96.9,300..700&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
 
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-</head>
+  </head>
 <body>
     <div id="heading" class="heading";>
         <a id="heading-home" class="heading-piece" href="index.html">LB</a>
-        <a class="heading-piece" href="projects.html">Projects</a>
-        <a class="heading-piece" href="education.html">Education</a> 
-        <a class="heading-piece" href="archive.html">Archive</a>
+        <a class="heading-piece" href=#education>Education</a>
+        <a class="heading-piece" href=#archive>Resources</a>
+        <a class="heading-piece" href=#projects>Projects</a> 
+        <a class="heading-piece" href=#feature-container>Featured</a>
     </div>
     <div id="name-container" class="contain">
-        <img id="name-right" class="name-piece" src="img/center-image.png">
-        <div  id="name-left" class="name-piece">
+        <img id="name-left" class="name-piece" src="img/center-image.png" alt="hanging quotes">
+        <div  id="name-right" class="name-piece">
                 <h1><strong>Lauren Brissette </strong> </h1>
                 <br>
                 <h3>Northeastern University | Computer Science</h3>
-                <p>I love to learn new things, try new foods, and creatively solve problems. 
+                <p>I love to learn new things and try new foods. 
                     Above all, I believe in the coexistence of hard work and happiness.  
-                    
+                </p>
+                <p id="my-info">
+                  <strong>Traditional Resume: </strong><a href="docs/resume.pdf">view here</a><br>
+                  <strong>GitHub: </strong><a href="https://github.com/laurenbrissette">@laurenbrissette</a><br>
+                  <strong>Email: </strong><a href="mailto:lbrissette5@gmail.com">lbrissette5@gmail.com</a><br>
+                  <strong>University Email: </strong><a href="mailto:brissette.l@northeastern.edu">brissette.l@northeastern.edu</a><br>
+                  <strong>Linkedin: </strong><a href="www.linkedin.com/in/lauren-brissette-a140182a9">view here</a>
                 </p>
         </div>
     </div>
-    <h2 class="quote"> "Your reward will be the widening of the horizon as you climb. <br> - Cecila Payne Gaposchkin </h2>
+      
+
     <div id="feature-container" class="contain">
-        <div id="first-feature" class="feature-piece">
-            <h4>From Education</h4>
-            <p>Organized a Scratch hackathon with FirstByte software team Spring 2024!
-                complete with presentations, activities, and challenges.
-            </p>
+        <div class="feature-piece">
+          <div class="center"><h4 >From Projects</h4></div>
+          <div class="middle">
+              <img class="feature-img" src="img/exquisite.png" alt="homepage of exquisite corpse">
+          </div>
+          <div class="center">
+            <p>"Exquisite Corpse" project for HackBeanpot 2024.  Web application.  Additional details below.</p>
+          </div>
        </div>
-        <div id="second-feature" class="feature-piece">
-            <h4>From Projects</h4>
-
-            <p>"Seam Ripper" project for Fundamentals of CS II Accel.. Smart image resizer.  
-                Additional details below.
-            </p>
+        <div class="feature-piece">
+          <div class="center"><h4>From Resources</h4></div>
+          <div class="middle">
+            <img class="feature-img" src="img/webdesign.jpeg" alt="homepage of exquisite corpse">
         </div>
-        <div id="third-feature" class="feature-piece">
-            <h4>From Archive</h4>
-            <p>Most recent book I read! </p>
+          <div class="center">
+            <p>Reading this right now! </p>
+          </div>
+        </div>
+        <div class="feature-piece">
+          <div class="center"><h4>From Education</h4></div>
+          <div class="middle">
+            <img class="feature-img" src="img/firstbyte.jpeg" alt="flyer for Firstbyte's hackathon">
+        </div>
+            <div class="center">
+              <p>Organized the Scratch Hackathon with FirstByte Software Team Spring 2024.
+                Complete with presentations, activities, and challenges.</p>
+            </div>
          </div>
-         <div id="feature-heading"><h4>Featured</h4></div>
+         <div id="feature-heading"><h2>Featured</h2></div>
     </div>
-    <div class="projects">
-        <h2 class="projects">Projects</h2>
+    <div id="projects" class="title">
+        <h2 class="title">Projects</h2>
     </div>
-    <div class="project-line">
+    <div id="skills">
+        <h2 id="skills-title">Skills:</h2>
+        <br>
+        <p>
+          <strong>Languages:</strong> Java | Python | HTML | CSS | Racket
+          <br>
+          <strong>Tools:</strong> MacOS/Linux | VS Code | GitHub | Eclipse 
+       </p>
+    </div>
+    <div class="card-line">
+      <div class="card">
+        <img src="img/site-cover.jpeg" class="card-img-top" alt="homepage of this website">
+        <div class="card-body">
+          <button type="button" class="collapsible"><h5>This Website</h5></button>
+          <div class="card-text">
+            <p>Decided to build to learn basic web development along the way.  Composed of HTML, CSS, and JavaScript. 
+              February 2024 - Present.
+            </p>
+          </div>
+          <a href="https://github.com/laurenbrissette/portfolio" class="btn">View on GitHub</a>
+        </div>
+      </div>
+      <div class="card">
+        <video height=300px controls>
+          <source class="card-img-top" src="media/ecdemo.mp4" type="video/mp4">
+          Demo of Exquisite Corpse project
+        </video>
+      <div class="card-body">
+          <button type="button" class="collapsible"><h5>Exquisite Corpse</h5></button>
+          <div class="card-text">
+            <p>Web application bringing a drawing game from team's childhoods.  Three people blindly draw parts of a creature on a 
+            time limit (customizable), and the pieces are combined to form a full image.  First experience with web development for all contributors.
+            Written in HTML, CSS, and Javascript in collaboration with a team.  HackBeanpot Hackathon March 2024.</p>
+          </div>
+          <a href="https://github.com/laurenbrissette/exquisite-corpse" class="btn">View on GitHub</a>
+        </div>
+      </div>
         <div class="card">
-            <video class="card-img-top" width="50" height="50" autoplay>
-                <source src="seamripper.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
+          <video height=300px controls>
+            <source class="card-img-top" src="media/seamripper.mp4" type="video/mp4">
+            Demo of Seam Ripper project
+          </video>
             <div class="card-body">
-              <h5 class="card-title">Seam Ripper</h5>
-              <p class="card-text">Smart image resizer, which detects the "least interesting" seam of pixels in the image and removes it, randomly alternating between 
-                horizontal and vertical.  "Interestingness" computed based on brightness of three upper neighbors of a given pixel.  Demonstrates efficiency and dynamic 
-            programming for quick computation time.  Written in Java using Northeastern "impword" and "tester" libraries.  Accelerated Fundamentals of CS II 2024.</p>
-              <a href="#" class="btn btn-primary">View on GitHub</a>
+              <button type="button" class="collapsible" ><h5>Seam Ripper</h5></button>
+              <div class="card-text">
+                <p>Smart image resizer, which detects the "least interesting" seam of pixels in the image and removes it, randomly alternating between 
+                    horizontal and vertical.  "Interestingness" computed based on brightness of three upper neighbors of a given pixel.  Demonstrates efficiency and dynamic 
+                    programming for quick computation time.  Written in Java using Northeastern "impword" and "tester" libraries.  Accelerated Fundamentals of CS II 2024.</p>
+              </div>
+              <a href="mailto:lbrissette5@gmail.com" class="btn">Request Code</a>
             </div>
-          </div>
+        </div>
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <video controls>
+              <source class="card-img-top" src="media/mazedemo.mp4" type="video/mp4">
+              Demo of Maze project 
+            </video>
             <div class="card-body">
-              <h5 class="card-title">Maze Generator</h5>
-              <p class="card-text">Maze generator, which constructs mazes up to 100 x 60 cells using Kruskal's Algorithm for Minimum Spanning Trees.
-                Solution may be animated in either Breadth or Depth First Search, or done manually.  Includes options to regenerate and pause.  Written in Java using 
-                Northeastern "impword" and "tester" libraries.  Accelerated Fundamentals of CS II 2024.
-              </p>
-              <a href="#" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Exquisite Corpse Online</h5>
-              <p class="card-text">Web application bringing a drawing game from team's childhoods.  Three people blindly draw parts of a creature on a 
-                time limit (customizable), and the pieces are combined to form a full image.  First experience with web development for all contributors.
-                Written in HTML, CSS, and Javascript in collaboration with a team.  HackBeanpot Hackathon March 2024.
-              </p>
-              <a href="#" class="btn btn-primary">View on GitHub</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">This Website</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">View on GitHub</a>
+              <button type="button" class="collapsible" ><h5>Maze Generator</h5></button>
+              <div class="card-text">
+                <p>Maze generator, which constructs mazes up to 100 x 60 cells using Kruskal's Algorithm for Minimum Spanning Trees.
+                    Solution may be animated in either Breadth or Depth First Search, or done manually.  Includes options to regenerate and pause.  Written in Java using 
+                    Northeastern "impword" and "tester" libraries.  Accelerated Fundamentals of CS II 2024.</p>
+              </div>
+              <a href="mailto:lbrissette5@gmail.com" class="btn">Request Code</a>
             </div>
           </div>
     </div>
-   <div class="skills">
-    <img class="skills-segment" id="skills-left" src="img/skills.png">
-    
-    <p class="skills-segment" id="skills-text">Languages: something here 
-        <br><br>Developer Tools: something here<br><br>Anything else </p>
-        <img class="skills-segment" id="skills-right" src="img/skills-right.png">
-   </div>
-z
 
+    <div class="title">
+      <h2 id="archive" class="title">Resources</h2>
+    </div>
+    <div id="archive-blurb">
+      <p> 
+        A collection of cool movies, books, articles or other media I've consumed lately related 
+        to tech and other interests.
+      </p>
+    </div>
+    <div class="card-line">
+      <div class="card">
+        <img src="img/webdesign.jpeg" class="card-img-top" altsrc="cover of Principles of Web Design by 
+        Brian D. Miller">
+          <div class="card-body">
+            <button type="button" class="collapsible" ><h5>Principles of Web Design</h5></button>
+            <div class="card-text">
+              <p>Book by Brian D. Miller which gives an overview of "keywords" in industry 
+                web development and explains how large scale projects are processed and planned.
+                (In Progress).
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="card">
+        <img src="img/codedbias.png" class="card-img-top" alt="cover of Coded Bias Film">
+          <div class="card-body">
+            <button type="button" class="collapsible" ><h5>Coded Bias Film</h5></button>
+            <div class="card-text">
+              <p>A film about the impact biased datasets have in training algorithms and in the creation of 
+                AI.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="education">
+      <h2 id="edu-title">Education</h2>
+      <div id="education-key" class="education-text">
+        <p>
+          <h3><strong>Northeastern University 2023-2027</strong></h3><br>
+          <strong>John Martinson Honors Program | GPA: 4.0/4.0 | National Merit Scholar</strong><br>
+          <i>Candidate for Bachelors of Science in Computer Science</i><br><br>
+          <strong>Related Coursework</strong><br>
+          <strong>CS Courses: </strong>Fundamentals of Computer Science I, II Accelerated, Discrete Structures, Mathematics of Data
+          Models, Foundations of Cybersecurity, Introduction to Python (Siena College)<br>
+          <strong>Math Courses: </strong>Calculus I, II, Introduction to Math Reasoning (Intensive)<br><br>
+      </div> 
+      <div class="education-text">
+          <strong>Activities</strong><br>
+          <strong>FirstByte // Software Team</strong><br>
+          Organized Scratch Hackathon for spring 2024 with activities and challenges using Makey Makey and circuit playgrounds 
+          <br>
+          <strong>Honors Ambassador</strong><br>
+          Connect with prospective Northeastern University Honors students 
+          and families to answer questions about how the program might be the 
+          right fit for them<br>
+          <strong>NU Women in Tech</strong><br>
+              Learn firsthand from co-op employers about their companies, hear from 
+              female software engineers about their experience and tools<br>
+          <strong>LEAD 360 Blueprint</strong><br>
+              Leadership training centered around alternative perspectives, individual circumstances, 
+              and background.  Completed December 2023<br>
+      </div> 
+    </div>
+    
+    <div id="footer"><p>Lauren Brissette 2024</p></div>
+
+    <script src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
     crossorigin="anonymous"></script>
