@@ -244,6 +244,7 @@ a:visited {
 
 .card, .card-img-top {
   width: 300px;
+  object-fit: fill;
 }
 
 .card {
