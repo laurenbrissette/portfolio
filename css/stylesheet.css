@@ -2,7 +2,6 @@
 body {
   background-color: #EFEFE9;
   font-family: "Karla", serif;
-
 }
 
 h1 {
@@ -24,7 +23,6 @@ h3 {
 }
 
 div {
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -76,20 +74,16 @@ a:visited {
 }
 /*--------------HEADING GRID-----------------*/
 .heading {
-  overflow: hidden;
-  top: 0;
-  padding-top: 5px;
-  width: 100%;
+  display: flex;
   height: 70px;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
   position: sticky;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   background-color: #523D35;
   font-weight: bolder;  
   z-index: 999;
+  border-radius: 10px;
+  margin: 5px;
 }
 
 .heading-piece {
@@ -249,6 +243,7 @@ a:visited {
 
 .card {
   margin:3vh;
+  border-radius: 10px;
 }
 
 .card-img-top {
@@ -304,22 +299,15 @@ a:visited {
 
 /*--------SKILLS-------------*/
 
-#skills {
-  background-color: #e1e1d9;
-  display: flex;
+.skills {
+  padding: 25px;
   height: 15vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
-  width: 100%;
   
 }
-
-#skills-title {
-  margin-left: 10vw;
-  margin-right: 20vw;
-  font-size: 25px;
-  color: black;
-}
-
 
 /*--------EDUCATION-------------*/
 
