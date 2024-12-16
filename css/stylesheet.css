@@ -127,13 +127,6 @@ a:visited {
 
 }
 
-.green-rectangle {
-  display: flex;
-  float: right;
-}
-#green {
-  float: right;
-}
 /*--------------NAME GRID-----------------*/
 #name-container {
   width: 100%;
@@ -161,10 +154,7 @@ a:visited {
 }
 
 #link-container {
-  display: flex;
-  align-items: center;
   padding-top: 20px;
-  justify-content: center;
   gap: 60px;
 }
 
@@ -221,18 +211,8 @@ a:visited {
   object-fit:contain;
   width: 320px;
   height: 160px;
-
   background-color: #F7F3F3;
   
-}
-
-/*--------ARCHIVE STUFF-------------*/
-#archive-blurb {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding-left: 10vw;
 }
 
 /*--------SKILLS-------------*/
@@ -266,6 +246,7 @@ a:visited {
 
 }
 
+/*-------FOOTER-----------------*/
 
 #footer {
   height:30px;
