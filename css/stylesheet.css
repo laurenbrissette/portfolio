@@ -1,18 +1,23 @@
 /*--------------DEFAULTS-----------------*/
 body {
-  background-color: #EFEFE9;
+  background-color: white;
   font-family: "Karla", serif;
+  max-width: 100vw;
 }
 
 h1 {
-  margin-left: 40px;
   font-size: 56px;
-  padding-bottom: 0px;
+  color: black;
+  font-family: "Lustria";
+  font-weight: 800;
+  
 }
 
 h2 {
-  font-size: 45px;
-  font-weight: bolder;
+  padding-top: 100px;
+  font-size: 48px;
+  color: black;
+  font-family: "Lustria";
 }
 
 h3 {
@@ -50,13 +55,10 @@ a:visited {
 
 .btn {
   margin-top: 15px;
-  background-color: #523D35;
-  color: white;
   text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #9a7e73;
   color: white;
   
 }
@@ -64,6 +66,7 @@ a:visited {
 .center {
   display:flex;
   justify-content: center;
+  align-items: center;
 }
 
 .middle {
@@ -72,24 +75,25 @@ a:visited {
   align-items: center;
   align-content: center;
 }
+
 /*--------------HEADING GRID-----------------*/
+
 .heading {
-  display: flex;
-  height: 70px;
+  height: 60px;
+  overflow: hidden;
   position: sticky;
-  justify-content: right;
+  top: 0;
   align-items: center;
-  background-color: #523D35;
-  font-weight: bolder;  
   z-index: 999;
-  border-radius: 10px;
-  margin: 5px;
+  background-color: black;
 }
 
 .heading-piece {
   display: flex;
+  font-family: 'Inter';
   margin:0;
   justify-content: center;
+  float: right;
   align-items: center;
   text-decoration: none;
   padding-left:20px;
@@ -101,16 +105,26 @@ a:visited {
 }
 
 .heading-piece:hover {
-  text-decoration: underline;
   color: white;
-}
-
-#heading-home {
-  float: left;
-}
-
-#heading-home:hover {
   text-decoration: none;
+}
+
+.heading-home {
+  font-family: 'Lustria';
+  height: 60px;
+  padding-left:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  color: white;
+  font-size: 24px;
+}
+
+.heading-home:hover {
+  color: white;
+  text-decoration: none;
+
 }
 
 .green-rectangle {
@@ -123,173 +137,97 @@ a:visited {
 /*--------------NAME GRID-----------------*/
 #name-container {
   width: 100%;
-  height: 85vh;
-  margin-top: 0px; 
-}
-.name-piece {
-  text-decoration: none; 
-  
-}
-#name-right {
-  margin-top: 14%;
-  width: 60%;
-}
-#name-right p{
-  inline-size: 86%;
-  text-align: justify;
-  padding-left: 7%;
-  padding-right: 7%;
-  color: black;
-}
-#name-left {
-  width: 55%; height: 100%; object-fit: cover;
-}
-
-/*--------------FEATURES-----------------*/
-.features {
-  width:100%;
-  background-color: rgb(210, 210, 244);
-  float: left;
-  margin: 0px;
-  padding-top: 5vh; padding-bottom: 3vh;
-  align-content: center;
-}
-
-#feature-container {
-  margin-top: 50px;
-  background-color: #e1e1d9;
+  height: 826px;
+  background-color: #F7F3F3;
   display: flex;
-  height: 60vh;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  position: relative;
+  z-index: 10;
+  font-family: 'Lustria';
 }
 
-.feature-piece {
-  background-color: white;
-  width: 350px;
-  height: 450px;
-  padding: 20px;
-  margin: 10px;
-  text-wrap: wrap;
+#pre-heading {
+  font-size: 32px;
+  padding: 0px;
 }
 
-.feature-piece h4{
-  padding-bottom: 10px;
-}
-
-.feature-piece p {
-  text-decoration: none;
-  position: absolute;
-  padding-left: 1%; padding-right: 1%;
-  bottom: 30px;
-  font-size: 16px;
-  inline-size: 25%; /*based on the size of the feature containers*/
-}
-
-#feature-heading {
-  color: black;
-  float: left;
-  padding-left: 30px;
-  width: 10vh;
-}
-
-#feature-heading h2{
-  height: 1px;
-  font-size: 45px;
-  display: fixed;
-}
-
-.feature-img {
-  display: inline-block;
-  padding: none;
-  inline-size: 75%;
-  display: fixed;
-  object-fit: contain;
-  outline-style: solid;
-  outline-color: #e1e1d9;
-}
-
-/*---------------QUOTE-----------------------*/
-.quote {
-  /* keep padding top and bottom the same ! */
-  padding-right: 10%; padding-left: 10%;
-  padding-top: 150px; padding-bottom: 150px;
-  font-weight: lighter;
-  font-size: 45px;
-}
-/*--------------PROJECTS-----------------*/
-.title {
+#horizontal-line {
   display: flex;
-  font-size: 45px;
-  font-weight: bolder;
-  width: 100%;
-  padding-top: 4vh;
-  padding-bottom: 1vh;
+  width: 468px;
+  height: 4px;
+  background-color: black;
   align-items: center;
   justify-content: center;
 }
+
+#link-container {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 60px;
+}
+
+/*--------------PROJECTS-----------------*/
 .card-grid {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  gap:30px;
+  padding-top:30px
 }
 
-.card, .card-img-top {
-  object-fit: contain;
-  width: 300px;
+.new-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 375px;
+  height: 420px;
+  gap: 24px;
+  border-width: 1px;
+  
 }
 
-.card {
-  margin:3vh;
-  border-radius: 10px;
+.new-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
 }
 
-.card-img-top {
-  height: 300px;
-  object-fit:contain;
-  background-color:#e1e1d9;
+.new-card-content {
+  color: #757575;
+  max-height: 100px;
+  overflow: scroll;
 }
 
-.collapsible {
-  background-color: #e1e1d9;
-  color: #444;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  height: 150px;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  border-radius: 5px;
+.new-card-title {
+  font-size: 24px;
 }
 
-.active, .collapsible:hover {
-  background-color: #f2f2ea;
-}
-
-.card-text {
-  padding: 15px;
-  display: none;
-  overflow: hidden;
-}
-
-.card-title {
-  font-weight: bolder;
-}
-
-.skill-item {
-  margin: 5px;
-  padding: 3px;
-  border-radius: 5px;
+.new-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: fit-content;
   color: black;
-
+  position: relative;
+  bottom:0;
 }
+
+.image-container {
+  object-fit:contain;
+  width: 320px;
+  height: 160px;
+
+  background-color: #F7F3F3;
+  
+}
+
 /*--------ARCHIVE STUFF-------------*/
 #archive-blurb {
-  background-color: #e1e1d9;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -300,9 +238,9 @@ a:visited {
 /*--------SKILLS-------------*/
 
 .skills {
-  padding: 25px;
-  height: 15vh;
+  font-family: 'Inter';
   display: flex;
+  font-size: 16px;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -312,37 +250,28 @@ a:visited {
 /*--------EDUCATION-------------*/
 
 #education {
-  background-color: #e1e1d9;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  justify-content: space-evenly;
   align-items: center;
-}
-
-#edu-title {
- margin-right: 6vw;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 
 .education-text {
-  display: inline;
-  width: 35vw;
-  margin-left: 4vh;
+  margin: "0px";
+  width: 500px;
+  max-width: 100vw;
+  text-align: justify;
 
 }
 
 
 #footer {
-  background-color: #523D35;
   height:30px;
   bottom: 0;
   display: flex;
   justify-content: center;
-  color: white;
+  color: black;
   overflow: hidden;
 }
-
-
-
