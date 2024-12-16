@@ -33,7 +33,7 @@ const projects = [
       buttonContent: 'View on Github',
   },
   {
-    image: '',
+    image: 'img/site-cover.png',
     title: 'This Website',
     description: 'Decided to build to learn basic web development along the way.',
     link: 'https://github.com/laurenbrissette/portfolio',
