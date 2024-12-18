@@ -154,10 +154,13 @@ function createCard({ image, title, description, link, isVideo, buttonContent}) 
   card.classList.add("new-card");
   isVideo ? 
   card.innerHTML += `
-   <video controls class="image-container">
-      <source class="image-container" src=${image} type="video/mp4">
+  <div class="center">
+   <video class="image-container" controls>
+      <source src=${image} type="video/mp4">
       Demo of ${title}
     </video>
+  </div>
+  
   ` : card.innerHTML += `
     <img src=${image} class="image-container" alt=${'image of ' + title}>
   `;
