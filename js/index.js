@@ -2,9 +2,11 @@
 // data for project cards
 const projects = [
   {
-      image: 'https://via.placeholder.com/300x200?text=Image+1',
+      image: 'media/mfademo.mp4',
       title: 'MFA Forms',
-      description: '',
+      description: 'Contributed to the MFA Forms application team, which is building an online form management and signature ' 
+        + 'website.  In the fall, I worked on the upload form template flow by integrating Figma designs using React and local '
+        + 'blob storage to persist information across pages.  I also worked on smaller redesign tickets.',
       link: 'https://github.com/sandboxnu/mfa-form-automator',
       isVideo: true,
       buttonContent: 'View on Github',
@@ -25,7 +27,7 @@ const projects = [
   {
       image: 'media/frogdemo.mp4',
       title: 'Frogger',
-      description: 'After finishing my first year, I wanted to expand my knowledge of Java by working with'
+      description: 'After finishing my first year, I wanted to expand my knowledge of Java by working with '
                + 'real-world tools and libraries rather than Northeastern based ones.  In this project, I'
               +  ' worked with JUnit testing and Java GUIs.',
       link: 'https://github.com/laurenbrissette/frogger',
@@ -33,8 +35,8 @@ const projects = [
       buttonContent: 'View on Github',
   },
   {
-    image: 'img/site-cover.png',
-    title: 'This Website',
+    image: 'img/site.png',
+    title: 'Portfolio Website',
     description: 'Decided to build to learn basic web development along the way.',
     link: 'https://github.com/laurenbrissette/portfolio',
     isVideo: false,
@@ -87,7 +89,7 @@ const resources = [
     image: 'img/eloquentjs.jpg',
     title: 'Eloquent JavaScript',
     description: 'I created Exquisite Corpse and Code 4 Community Projects in JS with my knowledge '
-                + 'of Java and Python, but both were a challenge!  With some extra time this summer, I '
+                + 'of Java and Python, but both were a challenge!  With some extra time summer of 2024, I '
                 + 'resolved to read up and learn JavaScript right.',
     link: 'https://eloquentjavascript.net',
     isVideo: false,
@@ -117,8 +119,18 @@ const resources = [
 // data for experience cards
 const experience = [
   {
+    image: 'img/khoury.jpg',
+    title: 'Teaching Assistant',
+    description: 'TA for Object Oriented Design, Northeastern University Spring 2025 Semester.  '
+    + 'Responsibilities include hosting 6+ hours of office hours and labs weekly assist with SOLID principles compliant development'
+    + ', answering student questions, and grading assignments',
+    link: 'course website',
+    isVideo: false,
+    buttonContent: 'Course Website',
+  },
+  {
     image: 'img/lead360.jpeg',
-    title: 'Lead360 Certification ',
+    title: 'Lead360 Certification',
     description: '"BLUEPRINT is an eight-week interactive group mentoring program for emerging leaders '
                 + 'designed to help you become the leader you wish to be! Map out your Leadership BLUEPRINT '
                 + 'and get to know your peers through a Northeastern specific leadership framework that focuses '
