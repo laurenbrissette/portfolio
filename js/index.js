@@ -37,7 +37,11 @@ const projects = [
   {
     image: 'img/site.png',
     title: 'Portfolio Website',
-    description: 'Decided to build to learn basic web development along the way.',
+    description: 'I decided to build this site to learn the basics of websites and have somewhere to organize my work.  I'
+        +' found working with vanilla HTML, CSS, and JavaScript to be a rewarding method to understand the true fundamentals and organization structure of web pages.  While it '
+        +'was a learning curve, I have a gained a strong understanding of CSS and DOM elements to address frontend bugs by evaluating the styles hidden '
+        + 'behind the black box of libraries.',
+
     link: 'https://github.com/laurenbrissette/portfolio',
     isVideo: false,
     buttonContent: 'View on Github',
