@@ -15,9 +15,10 @@ const projects = [
   {
       image: '/assets/media/mfademo.mp4',
       title: 'MFA Forms',
-      description: 'Contributed to the MFA Forms application team, which is building an online form management and signature ' 
-        + 'website.  In the fall, I worked on the upload form template flow by integrating Figma designs using React and local '
-        + 'blob storage to persist information across pages.  I also worked on smaller redesign tickets.',
+      description: ['Developed a form management website for 750+ Museum of Fine Arts employees to replace paper workflows, improving processing efficiency and streamlining internal operations, deployed for client use spring 2025',
+        'Designed and implemented user flows for creating form templates, improving usability by reducing navigation time through context-based state management and translating Figma wireframes into interactive pages',
+        'Administered CI/CD pipelines using GitHub Actions and Vercel, ensuring high-quality deployments by enforcing multiple PR reviews and collaborating with developers to resolve issues efficiently'
+      ],
       link: 'https://github.com/sandboxnu/mfa-form-automator',
       isVideo: true,
       buttonContent: 'View on Github',
@@ -25,12 +26,9 @@ const projects = [
   {
       image: '/assets/img/tennis-5782695_1280.jpg',
       title: 'Tennis League Script',
-      description: 'I developed and deployed a Web App script for a local Tennis League of 50+ members '
-              + 'which pulls and parses schedule and player information from a Google Sheet, and sends '
-              + 'a reminder text to each participant the day before their match. The program is active '
-              + 'for the 2024-2025 season.  The code for this project is on my GitHub, along with instructions '
-              + 'on how to modify and deploy it on any similar schedule spreadsheet, given that one follows the listed '
-              + 'formatting constraints in the container sheet.',
+      description:['Built and deployed a flexible Google AppsScript for the 2024-2025 season which sends text messages to 40+ members of a tennis league the day before a match',
+        'Collaborated with non-technical client to compile project specifications and construct maintenance guide'
+      ],
       link: 'https://github.com/laurenbrissette/tennis-league',
       isVideo: false,
       buttonContent: 'View on Github',
@@ -40,7 +38,7 @@ const projects = [
       title: 'Frogger',
       description: 'After finishing my first year, I wanted to expand my knowledge of Java by working with '
                + 'real-world tools and libraries rather than Northeastern based ones.  In this project, I'
-              +  ' worked with JUnit testing and Java GUIs.',
+              +  ' worked with JUnit testing and Java GUIs for the first time.',
       link: 'https://github.com/laurenbrissette/frogger',
       isVideo: true,
       buttonContent: 'View on Github',
@@ -48,10 +46,10 @@ const projects = [
   {
     image: '/assets/img/site.png',
     title: 'Portfolio Website',
-    description: 'I decided to build this site to learn the basics of websites and have somewhere to organize my work.  I'
+    description: 'I decided to build this site in 2024 to learn the basics of websites and have somewhere to organize my work.  I'
         +' found working with vanilla HTML, CSS, and JavaScript to be a rewarding method to understand the true fundamentals and organization structure of web pages.  While it '
         +'was a learning curve, I have a gained a strong understanding of CSS and DOM elements to address frontend bugs by evaluating the styles hidden '
-        + 'behind the black box of libraries.',
+        + 'behind the black box of libraries.  A year later though, I caved and migrated to React in favor of separation of components and easy to work with image libraries.',
 
     link: 'https://github.com/laurenbrissette/portfolio',
     isVideo: false,
@@ -60,9 +58,20 @@ const projects = [
   {
     image: '/assets/media/codeforcomm.mp4',
     title: 'C4C Partner Site',
-    description: 'Web application I built as a demo for keeping track of variable data for club partner projects.  Users can add and delete partner projects,'
-              + ' inputting thumbnails and other project details. ',
+    description: ['Developed a responsive full stack CRUD web application to showcase club partner organizations',
+'Integrated an Express backend that stores data about partner organizations to React frontend display'
+],
     link: 'https://github.com/laurenbrissette/c4c-challenge-fall-2024',
+    isVideo: true,
+    buttonContent: 'View on Github',
+  },
+   {
+    image: '/assets/media/ecdemo.mp4',
+    title: 'Exquisite Corpse',
+    description: 'Web application bringing a drawing game from team\'s childhoods.  Three people blindly draw parts of a creature on a '
+            + 'time limit (customizable), and the pieces are combined to form a full image.  First experience with web development for all contributors. '
+            + 'Written in HTML, CSS, and Javascript in collaboration with a team.  HackBeanpot Hackathon.',
+    link: 'https://github.com/laurenbrissette/exquisite-corpse',
     isVideo: true,
     buttonContent: 'View on Github',
   },
@@ -76,16 +85,7 @@ const projects = [
     isVideo: true,
     buttonContent: 'Request Code',
   },
-  {
-    image: '/assets/media/ecdemo.mp4',
-    title: 'Exquisite Corpse',
-    description: 'Web application bringing a drawing game from team\'s childhoods.  Three people blindly draw parts of a creature on a '
-            + 'time limit (customizable), and the pieces are combined to form a full image.  First experience with web development for all contributors. '
-            + 'Written in HTML, CSS, and Javascript in collaboration with a team.  HackBeanpot Hackathon.',
-    link: 'https://github.com/laurenbrissette/exquisite-corpse',
-    isVideo: true,
-    buttonContent: 'View on Github',
-  },
+ 
   {
     image: '/assets/media/seamripper.mp4',
     title: 'Seam Ripper',

@@ -15,9 +15,9 @@ export default function Page() {
                     <Experience/>
 
          <Projects/>
+        <Education/>
 
         <Resources/>
-        <Education/>
         </Flex>
         
      

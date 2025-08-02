@@ -26,7 +26,7 @@ export default function Bio() {
                         <Link href="https://www.linkedin.com/in/lauren-brissette"><FaLinkedin size="50"/></Link>
                     </Tooltip>  
                    <Tooltip showArrow content="PDF Resume">
-                        <Link href="docs/lauren_brissette_resume.pdf"><FaPaperclip size="50"/></Link>
+                        <Link href="assets/docs/lauren_brissette_resume.pdf"><FaPaperclip size="50"/></Link>
                     </Tooltip>
 
             </Flex>

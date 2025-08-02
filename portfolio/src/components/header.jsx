@@ -12,10 +12,10 @@ export default function Header() {
     gap="10px"
     display={{ base: "none", md: "flex" }}
   >
-    <Link href="#education">Education</Link>
-    <Link href="#resources">Resources</Link>
     <Link href="#experience">Experience</Link>
     <Link href="#projects">Projects</Link>
+    <Link href="#education">Education</Link>
+    <Link href="#resources">Resources</Link>
   </Flex>
 </></Box>
 }

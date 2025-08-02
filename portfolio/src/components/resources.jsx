@@ -12,6 +12,22 @@ export default function Resources() {
 
 // data for resource cards
 const resources = [
+    {
+    image: 'assets/img/aws.jpeg',
+    title: 'AWS Cloud Computing',
+    description: ['AWS Certified Cloud Practitioner course', 'Review video: https://www.youtube.com/watch?v=JsmhEgIV1mQ&t=6762s', 'Practice exams: https://github.com/kananinirav/AWS-Certified-Cloud-Practitioner-Notes/tree/master'],
+    link: 'https://www.pluralsight.com/?clickid=CjwKCAjw7rbEBhB5EiwA1V49nU3gQw9SFtXzggvr19S3lcG6cVhBeaJbFUV68NL4HiOSjWoMfx0TdxoCH2cQAvD_BwE&utm_source=google&utm_medium=paid-search&utm_campaign=brs-na-all-con-pur-gle-paid_search-evg-kwd-ps_core-e&utm_content=free-trial&gad_source=1&gad_campaignid=22198080696&gbraid=0AAAAADmVFQZ91Hzk-3AIb73KyuAEsO1eL&gclid=CjwKCAjw7rbEBhB5EiwA1V49nU3gQw9SFtXzggvr19S3lcG6cVhBeaJbFUV68NL4HiOSjWoMfx0TdxoCH2cQAvD_BwE',
+    isVideo: false,
+    buttonContent: 'Check It Out',
+  },
+  {
+    image: 'assets/img/pluralsight.jpeg',
+    title: 'Pluralsight Courses',
+    description: ['Fundamentals of EF Core', 'AWS Cloud Computing', 'Angular Fundamentals', 'Containers and Images'],
+    link: 'https://www.pluralsight.com/?clickid=CjwKCAjw7rbEBhB5EiwA1V49nU3gQw9SFtXzggvr19S3lcG6cVhBeaJbFUV68NL4HiOSjWoMfx0TdxoCH2cQAvD_BwE&utm_source=google&utm_medium=paid-search&utm_campaign=brs-na-all-con-pur-gle-paid_search-evg-kwd-ps_core-e&utm_content=free-trial&gad_source=1&gad_campaignid=22198080696&gbraid=0AAAAADmVFQZ91Hzk-3AIb73KyuAEsO1eL&gclid=CjwKCAjw7rbEBhB5EiwA1V49nU3gQw9SFtXzggvr19S3lcG6cVhBeaJbFUV68NL4HiOSjWoMfx0TdxoCH2cQAvD_BwE',
+    isVideo: false,
+    buttonContent: 'Check It Out',
+  },
   {
     image: 'assets/img/eloquentjs.jpg',
     title: 'Eloquent JavaScript',
