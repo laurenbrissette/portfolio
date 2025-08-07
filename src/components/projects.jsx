@@ -13,7 +13,7 @@ export default function Projects() {
 
 const projects = [
   {
-      image: '/assets/media/mfademo.mp4',
+      image: 'assets/media/mfademo.mp4',
       title: 'MFA Forms',
       description: ['Developed a form management website for 750+ Museum of Fine Arts employees to replace paper workflows, improving processing efficiency and streamlining internal operations, deployed for client use spring 2025',
         'Designed and implemented user flows for creating form templates, improving usability by reducing navigation time through context-based state management and translating Figma wireframes into interactive pages',
@@ -24,7 +24,7 @@ const projects = [
       buttonContent: 'View on Github',
   },
   {
-      image: '/assets/img/tennis-5782695_1280.jpg',
+      image: 'assets/img/tennis-5782695_1280.jpg',
       title: 'Tennis League Script',
       description:['Built and deployed a flexible Google AppsScript for the 2024-2025 season which sends text messages to 40+ members of a tennis league the day before a match',
         'Collaborated with non-technical client to compile project specifications and construct maintenance guide'
@@ -34,7 +34,7 @@ const projects = [
       buttonContent: 'View on Github',
   },
   {
-      image: '/assets/media/frogdemo.mp4',
+      image: 'assets/media/frogdemo.mp4',
       title: 'Frogger',
       description: 'After finishing my first year, I wanted to expand my knowledge of Java by working with '
                + 'real-world tools and libraries rather than Northeastern based ones.  In this project, I'
@@ -44,7 +44,7 @@ const projects = [
       buttonContent: 'View on Github',
   },
   {
-    image: '/assets/img/site.png',
+    image: 'assets/img/site.png',
     title: 'Portfolio Website',
     description: 'I decided to build this site in 2024 to learn the basics of websites and have somewhere to organize my work.  I'
         +' found working with vanilla HTML, CSS, and JavaScript to be a rewarding method to understand the true fundamentals and organization structure of web pages.  While it '
@@ -56,7 +56,7 @@ const projects = [
     buttonContent: 'View on Github',
   },
   {
-    image: '/assets/media/codeforcomm.mp4',
+    image: 'assets/media/codeforcomm.mp4',
     title: 'C4C Partner Site',
     description: ['Developed a responsive full stack CRUD web application to showcase club partner organizations',
 'Integrated an Express backend that stores data about partner organizations to React frontend display'
@@ -66,7 +66,7 @@ const projects = [
     buttonContent: 'View on Github',
   },
    {
-    image: '/assets/media/ecdemo.mp4',
+    image: 'assets/media/ecdemo.mp4',
     title: 'Exquisite Corpse',
     description: 'Web application bringing a drawing game from team\'s childhoods.  Three people blindly draw parts of a creature on a '
             + 'time limit (customizable), and the pieces are combined to form a full image.  First experience with web development for all contributors. '
@@ -76,7 +76,7 @@ const projects = [
     buttonContent: 'View on Github',
   },
   {
-    image: '/assets/media/mazedemo.mp4',
+    image: 'assets/media/mazedemo.mp4',
     title: 'Maze Generator',
     description: 'Maze generator, which constructs mazes up to 100 x 60 cells using Kruskal\'s Algorithm for Minimum Spanning Trees. '
                 + 'Solution may be animated in either Breadth or Depth First Search, or done manually.  Includes options to regenerate and pause.  Written in Java using '
@@ -87,7 +87,7 @@ const projects = [
   },
  
   {
-    image: '/assets/media/seamripper.mp4',
+    image: 'assets/media/seamripper.mp4',
     title: 'Seam Ripper',
     description: 'Smart image resizer, which detects the "least interesting" seam of pixels in the image and removes it, randomly alternating between ' 
                   + 'horizontal and vertical.  "Interestingness" computed based on brightness of three upper neighbors of a given pixel.  Demonstrates efficiency and dynamic '
