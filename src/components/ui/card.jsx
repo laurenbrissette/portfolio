@@ -12,14 +12,14 @@ export default function Card({ project }) {
       <Box width="200" height="200px" overflow="hidden" >
         {project.isVideo ? (
           <video 
-            src={project.image} 
+            src={`${process.env.PUBLIC_URL}/${project.image}`} 
             controls 
             muted 
             style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />
         ) : (
-          <Image 
-            src={project.image} 
+          <Image
+            src={`${process.env.PUBLIC_URL}/${project.image}`} 
             alt={project.title}
             width="100%"
             height="100%"
