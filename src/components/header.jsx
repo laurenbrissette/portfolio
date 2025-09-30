@@ -3,13 +3,13 @@ import { Flex, Link, Box } from "@chakra-ui/react";
 
 
 export default function Header() {
-    return <Box width="100%" padding="15px"> 
+    return <Box width="100%" padding="5px" fontSize="large"> 
       <Link href="#education" float="left">Lauren Brissette</Link>
 <>
   
   <Flex 
     float="right" 
-    gap="10px"
+    gap="30px"
     display={{ base: "none", md: "flex" }}
   >
     <Link href="#experience">Experience</Link>

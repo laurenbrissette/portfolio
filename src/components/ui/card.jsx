@@ -7,9 +7,11 @@ export default function Card({ project }) {
         padding="5" 
         height="xl"
         display="flex"
-        flexDirection="column">
+        flexDirection="column"
+        borderRadius={30}
+        backgroundColor={"#E8E2DC"}>
       
-      <Box width="200" height="200px" overflow="hidden" >
+      <Box width="200" height="200px" overflow="hidden" padding="10px">
         {project.isVideo ? (
           <video 
             src={`${process.env.PUBLIC_URL}/${project.image}`} 
@@ -39,7 +41,7 @@ export default function Card({ project }) {
          
         </ChakraCard.Body>
         <ChakraCard.Footer padding="10px" justifyContent={"right"} alig>
-            <Button background={"white"}><Link href={project.link}>{project.buttonContent}</Link></Button>
+            <Button background={"transparent"}><Link href={project.link}>{project.buttonContent}</Link></Button>
         </ChakraCard.Footer>
     </ChakraCard.Root>
 }

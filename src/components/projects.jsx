@@ -3,7 +3,7 @@ import CardArray from "./ui/card-array"
 
 export default function Projects() {
     return <Flex id="projects" alignItems={"center"} justifyContent={"center"} flexDirection={"column"} gap="20px">
-      <Heading size="4xl"alignItems={"center"} justifyContent={"center"} >
+      <Heading size="4xl" class="sub-heading" alignItems={"center"} justifyContent={"center"} fontFamily="Cambria" fontWeight="normal">
         Projects
       </Heading>
 <CardArray data={projects}/>
@@ -15,9 +15,10 @@ const projects = [
   {
       image: 'assets/media/mfademo.mp4',
       title: 'MFA Forms',
-      description: ['Developed a form management website for 750+ Museum of Fine Arts employees to replace paper workflows, improving processing efficiency and streamlining internal operations, deployed for client use spring 2025',
-        'Designed and implemented user flows for creating form templates, improving usability by reducing navigation time through context-based state management and translating Figma wireframes into interactive pages',
-        'Administered CI/CD pipelines using GitHub Actions and Vercel, ensuring high-quality deployments by enforcing multiple PR reviews and collaborating with developers to resolve issues efficiently'
+      description: [
+        'Developed digital form signature and management features enabling 750+ employees to replace paper procedures',
+        'Built intuitive form workflows with seamless state persistence using Next.js, ChakraUI, and React Context API',
+        'Implemented form template management service with version control, maintaining backwards compatibility for existing instances while enabling template updates'
       ],
       link: 'https://github.com/sandboxnu/mfa-form-automator',
       isVideo: true,
@@ -25,9 +26,11 @@ const projects = [
   },
   {
       image: 'assets/img/tennis-5782695_1280.jpg',
-      title: 'Tennis League Script',
-      description:['Built and deployed a flexible Google AppsScript for the 2024-2025 season which sends text messages to 40+ members of a tennis league the day before a match',
-        'Collaborated with non-technical client to compile project specifications and construct maintenance guide'
+      title: 'MatchDay Messenger',
+      description:[
+        'Implemented script to alert 40+ members of tennis league their match details, saving 2 hours weekly',
+        'Communicated with non-technical client to compile project specifications and maintenance guide',
+        'Scheduled time-driven triggers with detailed outcome emails to organizer, supporting clean client handoff'
       ],
       link: 'https://github.com/laurenbrissette/tennis-league',
       isVideo: false,

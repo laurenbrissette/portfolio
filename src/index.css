@@ -1,0 +1,17 @@
+
+body {
+    background-color: #F8F4F2;
+    font-size: medium;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+
+}
+
+body {
+  height: 100%;
+  overflow: auto; /* Allows scrolling within the body */
+}

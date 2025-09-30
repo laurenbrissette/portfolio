@@ -3,7 +3,7 @@ import CardArray from "./ui/card-array"
 
 export default function Resources() {
     return <Flex id="resources" alignItems={"center"} justifyContent={"center"} flexDirection={"column"} gap="20px">
-      <Heading size="4xl"alignItems={"center"} justifyContent={"center"} >
+      <Heading class="sub-heading" size="4xl"alignItems={"center"} justifyContent={"center"} fontFamily="Cambria" fontWeight="normal">
         Resources
       </Heading>
 <CardArray data={resources}/>

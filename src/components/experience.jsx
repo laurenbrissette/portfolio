@@ -4,7 +4,7 @@ import CardArray from "./ui/card-array"
 
 export default function Experience() {
     return <Flex id="experience" alignItems={"center"} justifyContent={"center"} flexDirection={"column"} gap="20px">
-      <Heading size="4xl"alignItems={"center"} justifyContent={"center"} >
+      <Heading size="4xl" alignItems={"center"} justifyContent={"center"} fontFamily="Cambria" fontWeight="normal">
         Experience
       </Heading>
 <CardArray data={experience}/>
@@ -16,9 +16,11 @@ export default function Experience() {
 const experience = [
    {
     image: 'assets/img/coverys.png',
-    title: 'Software Engineering Co-Op | Web Team',
-    description: ['Configured Auth0 application, API, and permissions to support role-based access on controllers, improving the security of sensitive client data in a legacy workflow automation system',
-      'Implemented 10+ feature enhancements using Angular and EF Core via defaults and simplified controls to provide focused data access, ultimately reducing manual work, improving user experience, and enabling client productivity'
+    title: 'Information Technology Co-Op | Web Team',
+    description: [
+      'Built interactive data visualization dashboards with tagging/filtering functionality using Angular and Kendo UI',
+      'Created RESTful APIs for task management with role-based access control using .NET Core, C#, and EF Core',
+      'Configured Auth0 to support role-based controller access, improving security of sensitive company data'
     ],
     link: 'https://www.coverys.com',
     isVideo: false,
@@ -27,10 +29,11 @@ const experience = [
   {
     image: 'assets/img/pawtograder.png',
     title: 'Software Engineering Co-Op | CS 3100',
-    description: ['Implemented 5+ MVP feature-complete pages on a new open-source course management platform, enabling adoption by Northeastern University for 1,000+ users across 3 campuses, streamlining institutional operations',
-      'Designed and deployed row-level security, SQL triggers, and Supabase edge functions to ensure scalable authorization, safeguard sensitive data, and maintain reliability for a high-traffic application',
-      'Developed a grader assignment interface for workload division using a flexible network flow algorithm with consideration of grading conflicts and previous workload, enhancing classroom workflows',
-      'Configured Supabase storage for efficient data management, reducing retrieval times and ensuring seamless backend performance'
+    description: [
+      'Architected 5 MVP pages using Next.js and Supabase (PostgreSQL), enabling rapid adoption for 1000+ students',
+      'Delivered scalable performance and security using row-level database permissions, edge functions, and cron jobs',
+      'Configured Supabase storage for efficient file management, optimizing retrieval times and backend performance',
+      'Developed network flow algorithm for grading division, cutting manual work and enhancing course-staff workflows'
     ],
     link: 'https://github.com/pawtograder/platform',
     isVideo: false,
@@ -39,8 +42,9 @@ const experience = [
   {
     image: 'assets/img/khoury.jpg',
     title: 'Teaching Assistant',
-    description: ['Facilitated 4+ hours weekly of office hours and labs for 30+ students, teaching SOLID principles, test-driven development, and debugging strategies to prepare students for advanced coursework and professional roles',
-      'Provided detailed feedback on 50+ projects through grading and one-on-one consultations, helping students apply high-level design patterns, from refining computational logic to improving user-facing functionality '
+    description: ['Managed labs of 30+ students, teaching SOLID principles, TDD, MVC architecture, and debugging strategies',
+      'Evaluated 50+ Java projects providing technical feedback via grading and individual mentoring sessions',
+      'Helped students apply high-level design patterns to refine computational logic and improve user-facing functionality'
     ],
         link: 'https://course.ccs.neu.edu/cs3500/',
     isVideo: false,

@@ -6,17 +6,17 @@ import Projects from "../components/projects";
 import Resources from "../components/resources";
 import Experience from "../components/experience";
 import Education from "../components/education";
+import Skills from "../components/skills";
 
 export default function Page() {
     return <Box margin="15px">
         <Header/>
         <Bio/>
         <Flex flexDir={"column"} gap="30px">
-                    <Experience/>
-
-         <Projects/>
+        <Skills/>
+        <Experience/>
+        <Projects/>
         <Education/>
-
         <Resources/>
         </Flex>
         
