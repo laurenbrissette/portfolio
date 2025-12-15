@@ -1,6 +1,6 @@
 import { Button } from './ui/button';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
-import resume from '../assets/docs/Lauren_Brissette_Resume.pdf';
+import resume from '../assets/docs/lauren_brissette_resume.pdf';
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
