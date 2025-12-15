@@ -1,3 +1,5 @@
+import portrait from '../assets/img/portrait.jpeg';
+
 export function About() {
   return (
     <section id="about" className="py-20">
@@ -45,7 +47,7 @@ export function About() {
             </div>
             
             
-            <img src="../public/assets/img/portrait.jpeg"></img>
+            <img src={portrait}></img>
           </div>
         </div>
       </div>
