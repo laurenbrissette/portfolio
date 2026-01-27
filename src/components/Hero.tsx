@@ -1,5 +1,6 @@
 import { Button } from './ui/button';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
+// @ts-ignore
 import resume from '../assets/docs/lauren_brissette_resume.pdf';
 
 export function Hero() {

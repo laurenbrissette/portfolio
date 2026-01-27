@@ -25,18 +25,31 @@ export default function App() {
         <Skills />
         <Experience experience={[{
   id: "1",
+  company: "Northeastern University",
+  position: "Program Design And Implementation II Teaching Assistant",
+  duration: "January 2025 - Present",
+  location: "Boston, MA",
+  description: ["• Managed labs of 30+ students, teaching SOLID principles, TDD, MVC architecture, and debugging strategies", 
+    "• Evaluated 50+ Java projects providing technical feedback via grading and individual mentoring sessions",
+    "• Helped students apply high-level design patterns to build clean, scalable, maintainable code bases"
+  ],
+  technologies: ["Java", "JUnit", "Swing"],
+  current: false,
+},{
+  id: "2",
   company: "Coverys",
   position: "Information Technology Co-op",
   duration: "July 2025 - December 2025",
   location: "Boston, MA",
-  description: ["• Built interactive data visualization dashboards with tagging/filtering functionality using Angular and Kendo UI", 
-    "• Created RESTful APIs for task management with role-based access control using .NET Core, C#, and EF Core",
-    "• Configured Auth0 to support role-based controller access, improving security of sensitive company data"
+  description: ["• Co-developed C#/.NET document issuance system reducing IT support needs, saving 2,200 hours/$300K annually", 
+    "• Refactored brittle legacy code from Word templates into efficient, reusable, maintainable, and testable C# services",
+    "• Achieved 70% test coverage on new web app, setting automated testing standards and improving deployments",
+    "• Delivered intuitive data management UI with complex validation to support launch 2 weeks ahead of schedule"
   ],
   technologies: ["Angular", "TypeScript", "#C", ".NET", "EF Core", "SQL Server Management Studio", "Postman", "Swagger", "Jasmine"],
   current: false,
 }, {
-  id: "2",
+  id: "3",
   company: "Northeastern University",
   position: "Software Engineering Co-op",
   duration: "May 2025 - June 2025",
@@ -48,20 +61,8 @@ export default function App() {
   ],
   technologies: ["Next.js", "TypeScript", "RefineDev", "Supabase", "PostgreSQL", "Vercel", "Docker"],
   current: false,
-}, 
-{
-  id: "3",
-  company: "Northeastern University",
-  position: "Object Oriented Design Teaching Assistant",
-  duration: "May 2025 - June 2025",
-  location: "Boston, MA",
-  description: ["• Managed labs of 30+ students, teaching SOLID principles, TDD, MVC architecture, and debugging strategies", 
-    "• Evaluated 50+ Java projects providing technical feedback via grading and individual mentoring sessions",
-    "• Helped students apply high-level design patterns to refine computational logic and improve user-facing functionality"
-  ],
-  technologies: ["Java", "JUnit", "Swing"],
-  current: false,
-}]}/>
+}
+]}/>
         <Projects projects={[{
           id: '1',
           title: 'Good Dog Licensing @ SandboxNU',

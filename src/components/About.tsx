@@ -22,7 +22,7 @@ export function About() {
                   geometry, U.S. history - content that my knowledge on the subject might not advance much further beyond that level.
                 </p>
                 <p>
-                  When I finished first computer science course in 10th grade, I couldn't imagine letting everything I'd learned go.  So I continued the next year, and the next, until 
+                  When I finished my first computer science course in 10th grade, I couldn't imagine letting everything I'd learned go.  So I continued the next year, and the next, until 
                   my senior year it was obvious: this was what I wanted to do.  
                 </p>
                 <p>
