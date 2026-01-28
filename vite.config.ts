@@ -2,10 +2,29 @@
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
+  import fs from 'fs';
 
   export default defineConfig({
     base: '/portfolio/',
-    plugins: [react()],
+    plugins: [
+      react(),
+      {
+        name: 'copy-pdf',
+        apply: 'build',
+        enforce: 'post',
+        generateBundle() {
+          const pdfPath = path.join(__dirname, 'public', 'lauren_brissette_resume.pdf');
+          if (fs.existsSync(pdfPath)) {
+            const pdfContent = fs.readFileSync(pdfPath);
+            this.emitFile({
+              type: 'asset',
+              fileName: 'lauren_brissette_resume.pdf',
+              source: pdfContent,
+            });
+          }
+        },
+      },
+    ],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {

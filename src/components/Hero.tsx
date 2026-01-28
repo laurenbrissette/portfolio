@@ -1,6 +1,5 @@
 import { Button } from './ui/button';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
-import resume from '../assets/docs/lauren_brissette_resume.pdf';
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -32,14 +31,13 @@ export function Hero() {
               View My Work
             </Button>
             <Button variant="outline" size="lg" asChild>
-                  <a href={resume} download>
+                  <a href="/portfolio/lauren_brissette_resume.pdf" download="Lauren_Brissette_Resume.pdf">
                     <Download className="w-4 h-4 mr-2" />
                     Download Resume
                   </a>
                 </Button>
             <Button 
-              variant="outline" 
-              size="lg"
+              size="lg" 
               onClick={() => scrollToSection('contact')}
               className="w-full sm:w-auto"
             >
