@@ -30,12 +30,6 @@ export function Hero() {
             >
               View My Work
             </Button>
-            <Button variant="outline" size="lg" asChild>
-                  <a href="/portfolio/lauren_brissette_resume.pdf" download="Lauren_Brissette_Resume.pdf">
-                    <Download className="w-4 h-4 mr-2" />
-                    Download Resume
-                  </a>
-                </Button>
             <Button 
               size="lg" 
               onClick={() => scrollToSection('contact')}
