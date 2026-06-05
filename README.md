@@ -12,7 +12,3 @@
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
-  
-Things I need to do still: 
-- Make send message on the form actually do something 
-- Good dog demo 
